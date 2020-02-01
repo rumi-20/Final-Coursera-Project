@@ -43,5 +43,6 @@ Gyroscope, TimeBody and body etc.
 
 7.	From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and 
 each subject.
-Lastly an independent dataset Final_Project is created which contains all the summarize data with respect to subject and activity 
-variables. This data is then saved to Final_Project.txt using write.table() function.
+
+Lastly an independent dataset Final_Data is created which contains all the summarize data with respect to subject and activity 
+variables. This data is then saved to Final_Data.txt using write.table() function.
