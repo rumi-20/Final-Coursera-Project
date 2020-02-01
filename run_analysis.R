@@ -20,9 +20,6 @@ y_train <- read.table("UCI HAR Dataset//train//y_train.txt", col.names = "code")
 
 
 
-
-
-
 #Step 1
 
 X1<-cbind(subjectTrain,y_train,x_train)
@@ -42,21 +39,18 @@ Data$code[Data$code==6]<-"Lying"
 
 #Step4
 colnames(Data)[2] = "activity"
-
-
-
-names(Data)<-gsub("Acc", "Accelerometer", names(Data))
-names(Data)<-gsub("Gyro", "Gyroscope", names(Data))
-names(Data)<-gsub("BodyBody", "body", names(Data))
-names(Data)<-gsub("Mag", "Magnitude", names(Data))
-names(Data)<-gsub("^t", "Time", names(Data))
-names(Data)<-gsub("^f", "Frequency", names(Data))
-names(Data)<-gsub("tBody", "TimeBody", names(Data))
-names(Data)<-gsub("-mean()", "Mean", names(Data), ignore.case = TRUE)
-names(Data)<-gsub("-std()", "Standard_deviation", names(Data), ignore.case = TRUE)
-names(Data)<-gsub("-freq()", "Frequency", names(Data), ignore.case = TRUE)
-names(Data)<-gsub("angle", "Angle", names(Data))
-names(Data)<-gsub("gravity", "Gravity", names(Data))
+names(Data)<-sub("Acc", "Accelerometer", names(Data))
+names(Data)<-sub("Gyro", "Gyroscope", names(Data))
+names(Data)<-sub("BodyBody", "body", names(Data))
+names(Data)<-sub("Mag", "Magnitude", names(Data))
+names(Data)<-sub("^t", "Time", names(Data))
+names(Data)<-sub("^f", "Frequency", names(Data))
+names(Data)<-sub("tBody", "TimeBody", names(Data))
+names(Data)<-sub("-mean()", "Mean", names(Data), ignore.case = TRUE)
+names(Data)<-sub("-std()", "Standard_deviation", names(Data), ignore.case = TRUE)
+names(Data)<-sub("-freq()", "Frequency", names(Data), ignore.case = TRUE)
+names(Data)<-sub("angle", "Angle", names(Data))
+names(Data)<-sub("gravity", "Gravity", names(Data))
 
 
 #Step4
