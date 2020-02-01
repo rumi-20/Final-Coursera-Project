@@ -2,7 +2,7 @@
 This is a final course project as peer graded assignment under Jhon Hopkins University Getting and Cleaning Data. 
 For the assignment I used R Studio version 3.6.2. The R script run_analysis does the following tasks.
 
-1.	Reads already download .txt files from the folder
+1.	Download dataset folder from shared url and read each text file as data table
 2.	Column wise merges all training files 
 3.	Column wise merges all testing files 
 4.	Finally combines all data tables row wise to create one data table
